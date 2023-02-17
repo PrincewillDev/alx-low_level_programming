@@ -9,16 +9,16 @@ int main(void)
 {
 	char charType;
 	int intType;
-	long int longint;
-	long long int longint2;
+	long int li;
+	long long int li2;
 	float floatType;
 
 	/* sizeof evaluates the size of a variable */
-	printf("Size of char: %lu byte(s)\n", (unsigned long)sizeof(charType));
-	printf("Size of int: %lu byte(s)\n", (unsigned long)sizeof(intType));
-	printf("Size of longint: %lu byte(s)\n", (unsigned long)sizeof(longint));
-	printf("Size of longlongint: %lu byte(s)\n", (unsigned long)sizeof(longint2));
-	printf("Size of float: %lu byte(s)\n", (unsigned long)sizeof(floatType));
+	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(charType));
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(intType));
+	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(li));
+	printf("Size of a long longint: %lu byte(s)\n", (unsigned long)sizeof(li2));
+	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(floatType));
 
 	return (0);
 }
