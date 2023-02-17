@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE=c
+export CFILE=main.c; gcc -E main.c > c
