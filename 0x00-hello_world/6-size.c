@@ -13,10 +13,10 @@ int main(void)
 	char charType;
 
 	/* sizeof evealuates the size of a variable */
-	puts("Size of int: %zu bytes", sizeof(intType));
-	puts("Size of int: %zu bytes", sizeof(floatType));
-	puts("Size of int: %zu bytes", sizeof(doubleType));
-	puts("Size of int: %zu bytes", sizeof(charType));
+	printf("Size of int: %zu bytes\n", sizeof(intType));
+	printf("Size of int: %zu bytes\n", sizeof(floatType));
+	printf("Size of int: %zu bytes\n", sizeof(doubleType));
+	printf("Size of int: %zu bytes\n", sizeof(charType));
 
 	return (0);
 }
