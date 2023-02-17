@@ -1,4 +1,4 @@
-#include <stadio.h>
+#include <stdio.h>
 #include <stlib.h>
 
 /**
