@@ -14,7 +14,9 @@ int main(void)
 
 	for (base_num = 0; base_num < 10; base_num++)
 
-		printf("%d\n", base_num);
+		printf("%d", base_num);
+
+	printf('\n');
 
 	return (0);
 
