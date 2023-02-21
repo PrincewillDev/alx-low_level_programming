@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	char alphabets;
+	int ascii_alphabets;
 
-	for (alphabets = "z"; alphabets >= "a"; alphabets--)
+	for (ascii_alphabets = 122; ascii_alphabets >= 97; ascii_alphabets--)
 
 		putchar(i);
 
