@@ -14,7 +14,7 @@ int main(void)
 
 	for (base_num = 0; base_num < 10; base_num++)
 
-		putchar("%d", base_num);
+		putchar(base_num + '0');
 
 	putchar('\n');
 
