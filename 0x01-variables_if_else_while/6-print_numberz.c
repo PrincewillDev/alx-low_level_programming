@@ -16,7 +16,7 @@ int main(void)
 
 		putchar("%d", base_num);
 
-	putchar("\n");
+	putchar('\n');
 
 	return (0);
 
