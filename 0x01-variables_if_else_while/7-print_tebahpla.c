@@ -12,7 +12,7 @@ int main(void)
 
 	for (ascii_alphabets = 122; ascii_alphabets >= 97; ascii_alphabets--)
 
-		putchar(i);
+		putchar(ascii_alphabets);
 
 	putchar('\n');
 
