@@ -17,6 +17,6 @@ int prt(void)
 	putchar('a');
 	putchar('r');
 
-	return (0);
+	return (1);
 
 }
