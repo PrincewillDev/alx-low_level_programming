@@ -3,9 +3,9 @@
 #include <ctype.h>
 
 /**
- * _islower  - checks for lowercase character
+ * _islower- checks for lowercase character
  * @c : variable carrier
- * return : 0 always (success)
+ * Return: 0 always(success)
  */
 
 int _islower(int c)

@@ -3,9 +3,9 @@
 #include <ctype.h>
 
 /**
- * _isalpha - print alphabets
+ * _isalpha- print alphabets
  * @c: variable carrier
- * return: 0 always (success)
+ * Return: 0 Always(success)
  */
 
 int _isalpha(int c)
