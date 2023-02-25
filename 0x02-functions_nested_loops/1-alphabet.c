@@ -14,11 +14,11 @@ void print_alphabet(void)
 	while (letters <= 'z')
 	{
 
-		putchar(letters);
+		_putchar(letters);
 
 		letters++;
 	}
 
-	putchar('\n');
+	_putchar('\n');
 
 }
