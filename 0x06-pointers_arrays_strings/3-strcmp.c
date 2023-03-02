@@ -40,7 +40,7 @@ int _strcmp(char *s1, char *s2)
 
 	else if (flag == -15)
 	{
-		_putchar(-15);
+		_putchar(15);
 	}
 
 	else
