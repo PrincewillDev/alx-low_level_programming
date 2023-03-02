@@ -1,52 +1,31 @@
 #include "main.h"
 
 /**
- * _strcmp - This function takes two string and compare them together
- * @s1: This is the first argument passed
- * @s2: This is the second argument passed
+ * _strcmp - Compares two strings
+ * @s1: Pointer to the first string to be compared
+ * @s2: Pointer to the second string to be compared
  *
- * Return: Always 0 (Success)
+ * Return: An integer less than, equal to, or greater than zero if s1 is found,
+ * respectively, to be less than, to match, or be greater than s2.
  */
 
 int _strcmp(char *s1, char *s2)
 {
 
-	int i, flag = 0;
+	while (*s1 != '\0' && *s2 != '\0')
 
-	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
 	{
-		if (s1[i] > s2[i])
-		{
-			flag = 15;
 
-			break;
+		if (*s1 != *s2)
+		{
+			return (*s1 - *s2);
 		}
 
-		else if (s1[i] < s2[i])
-		{
-			flag = -15;
-			break;
-		}
+		s1++;
 
-		else
-		{
-			flag = 0;
-		}
-	}
-	if (flag == 15)
-	{
-		_putchar(15);
+		s2++;
+
 	}
 
-	else if (flag == -15)
-	{
-		_putchar(15);
-	}
-
-	else
-	{
-		_putchar(0);
-	}
-
-	return (flag);
+	return (*s1 - *s2);
 }
