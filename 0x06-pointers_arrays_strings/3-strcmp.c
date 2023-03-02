@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
+
 /**
  * _strcmp - This function takes two string and compare them together
  * @s1: This is the first argument passed
