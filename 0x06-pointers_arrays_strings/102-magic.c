@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - the main function prints out the integer 98
+ * main - the main function prints out the integer 98
  * Return: 0 Always (Success)
  */
 
