@@ -5,8 +5,8 @@
 #include <string.h>
 
 /**
- * _atot - return _atoi function
- *@s: agrument
+ * _atoi - return atoi function
+ * @s: agrument
  *
  * Return: Result
  */
