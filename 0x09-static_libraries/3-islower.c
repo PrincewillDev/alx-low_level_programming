@@ -4,7 +4,15 @@
 #include <ctype.h>
 #include <string.h>
 
+/**
+ * _islower - change strings to lower characters
+ * @c:  argument
+ *
+ * Return: value
+ */
+
 int _islower(int c)
 {
-    return (c >= 'a' && c <= 'z');
+
+	return (c >= 'a' && c <= 'z');
 }
