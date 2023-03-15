@@ -4,10 +4,12 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 int _putchar(char c);
 int main (int argc, char *argv[]);
 int main(int argc, __attribute__((unused)) char *argv[]);
+int main (int argc, char *argv[]);
 int main (int argc, char *argv[]);
 int main (int argc, char *argv[]);
 
