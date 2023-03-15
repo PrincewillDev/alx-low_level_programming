@@ -35,7 +35,7 @@ char *create_array(unsigned int size, char c)
 
 		p = p + 1;
 
-		size --;
+		size--;
 	}
 
 	return (p2);
