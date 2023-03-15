@@ -9,13 +9,10 @@
 
 char *create_array(unsigned int size, char c)
 {
-	unsigned int i;
 
 	char *p;
 
 	char *p2;
-
-	p2 = p;
 
 	if (size == 0)
 	{
@@ -29,6 +26,8 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 
+	p2 = p;
+
 	while (size > 0)
 	{
 	
@@ -39,6 +38,6 @@ char *create_array(unsigned int size, char c)
 		size --;
 	}
 
-	return (p2)
+	return (p2);
 
 }
