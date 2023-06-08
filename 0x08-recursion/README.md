@@ -6,3 +6,7 @@ This function prints a string in reverse.
 
 ### _strlen_recursion
 This function print the length of a string.
+
+### factorial(int n)
+This function returns the factorial of a given number
+
