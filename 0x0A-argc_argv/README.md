@@ -3,3 +3,6 @@
 
 ### 1-args.c
 This program prints the number of arguments passed into argv[]
+
+### 2-args.c
+This program prints all arguments it recieves
