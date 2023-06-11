@@ -15,14 +15,14 @@ int main(int argc, char *argv[])
 
 	sum = 0;
 
-	if (argc == 0)
+	if (argc == 0 )
 	{
 		printf("0\n");
 	}
 
 	for (i = 1; i < argc; i++)
 	{
-		if (!atoi(argv[i]) || atoi(argv[i]) <  0)
+		if (!atoi(argv[i]))
 		{
 			printf("Error\n");
 
