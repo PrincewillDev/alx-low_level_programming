@@ -9,3 +9,6 @@ This program prints all arguments it recieves
 
 ### 3-mul.c
 This program multiplies two numbers.
+
+### 4-add.c
+This program sum up numbers
