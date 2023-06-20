@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include "dog.h"
 
-int _putchar(char c);
 void init_dog(struct dog *d, char *name, float age, char *owner);
+int _putchar(char c);
 
-#endif /*MAIN_H */
+#endif /* MAIN_H */
