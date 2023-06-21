@@ -22,5 +22,7 @@ void print_name(char *name, void (*f)(char *))
 		i++;
 	}
 
+	_putchar('\0');
+
 	f(name);
 }
