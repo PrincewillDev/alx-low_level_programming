@@ -12,6 +12,11 @@ void print_name(char *name, void (*f)(char *))
 
 	i = 0;
 
+	if (name == NULL || name == NULL)
+	{
+		return;
+	}
+
 	while (name[i] != '\0')
 	{
 		i++;
