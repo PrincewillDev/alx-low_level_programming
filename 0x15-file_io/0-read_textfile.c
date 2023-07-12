@@ -1,52 +1,50 @@
 #include "main.h"
-
 /**
  * read_textfile - Read text files and print to posix stdout
  * @filename: file name
  * @letters: number of texts
  * Return: number of letters it could read or print
  */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	/* Variable declarations */
-	FILE *file;
 	char *buffer;
-	ssize_t readbytes;
+	int fp, byteread, filewrite;
 
-	/*Dynamically allocate memory for the buffer*/
-	buffer = malloc((letters + 1) * sizeof(char));
+	/* Allocate memory dynamically for the buffer */
+	buffer = malloc(sizeof(char) * letters);
 
-	/* Check if the filename is NULL */
+	/*Check if malloc failed */
+	if (buffer == NULL)
+		return (0);
+
+	/* Open the file and set the mode */
+	fp = open(filename, O_RDONLY);
+
+	/* Check if the file is successfully opened */
+	if (fp == -1)
+	{
+		free(buffer);
+		return (0);
+	}
+	/* Check if the file name is NULL if so return O */
 	if (filename == NULL)
+		return (0);
+
+	/* Perform file processing */
+	byteread = read(fp, buffer, letters);
+	if (byteread == -1)
 	{
+		free(buffer);
 		return (0);
 	}
 
-	/* Initialize the file pointer */
-	file = fopen(filename, "r");
-	if (file == NULL)
+	filewrite = write(STDOUT_FILENO, buffer, byteread);
+	if (filewrite == -1)
 	{
-		/* Failed to open the file */
+		free(buffer);
 		return (0);
 	}
-
-	/* Read and print the content of the file */
-	readbytes = fread(buffer, sizeof(char), letters, file);
-	if (readbytes < 0)
-	{
-		/* Failed to read the file */
-		fclose(file);
-		return (0);
-	}
-	buffer[readbytes] = '\0';  /* Null-terminate the buffer */
-
-	/* Print the content to the standard output (stdout) */
-	 fprintf(stderr, "%s", buffer);
-	/* Close the file */
-	fclose(file);
-
-	/* Return the actual number of letters read and printed */
-	return (readbytes);
+	close(fp);
+	free(buffer);
+	return (filewrite);
 }
-
