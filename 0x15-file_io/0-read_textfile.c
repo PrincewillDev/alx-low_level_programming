@@ -42,7 +42,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	buffer[readbytes] = '\0';  /* Null-terminate the buffer */
 
 	/* Print the content to the standard output (stdout) */
-	fwrite(buffer, sizeof(char), readbytes, stdout);
+	fwrite(buffer, sizeof(char), readbytes, stderr);
 
 	/* Close the file */
 	fclose(file);
