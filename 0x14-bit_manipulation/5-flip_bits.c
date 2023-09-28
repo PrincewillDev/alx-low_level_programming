@@ -9,18 +9,20 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int value, count;
 
-	value = n ^ m;
-	count = 0;
+	unsigned int i, count = 0, value;
+	unsigned int maxIndex = sizeof(unsigned long int) * 8;
 
-	while (value > 0)
+	for (i = 0; i < maxIndex; i++)
 	{
-		if (value & 1)
+		/* Compare each bit of both numbers at the same index */
+		value = ((n >> i) ^ (m >> i)) & 1;
+
+		/* Increment flips if bits are different */
+		if (value != 0)
 		{
 			count++;
 		}
-		value >>= 1;
 	}
 
 	return (count);
