@@ -39,14 +39,16 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			newnode->next = stemp;
 			ftemp->next = newnode;
 			stemp->prev = newnode;
+			return (newnode);
+			break;
 		}
 		ftemp = ftemp->next;
 		count++;
 	}
-	if (count != idx)
+	if (idx > sizeof(dlistint_t))
 	{
 		return (NULL);
 	}
-	return (newnode);
+	return (0);
 
 }
