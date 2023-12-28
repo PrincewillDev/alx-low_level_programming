@@ -9,17 +9,16 @@
 unsigned long int hash_djb2(const unsigned char *str)
 {
 	/* Initialize hash to 5381 */
-	unsigned int hash = 5381;
+	unsigned long int hash = 5381;
 
 	/* declare an int var to get the ascii value of the string (key)*/
-	unsigned int c;
+	int c;
 
 	/* use a loop to iterate through the string (key) to hash the key*/
 	while ((c = *str++))
 	{
 		/* The hashing formula to hash the key*/
-		hash = ((hash << 5) + hash) + c; 
+		hash = ((hash << 5) + hash) + c;
 	}
-
 	return (hash);
 }
