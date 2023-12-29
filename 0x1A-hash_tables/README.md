@@ -9,3 +9,5 @@
     1-djb2.c : This is a hash function that creates a hash value and returns the hash value. It uses the djb2 hash algorithm.
 
     2-key_index.c: This function hashes the key, gets the index and return the index or hash value of the key.
+    
+    3-3-hash_table_set.c: This function adds an element to the hash table and handles collision with chaining
