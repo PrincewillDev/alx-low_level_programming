@@ -11,3 +11,5 @@
     2-key_index.c: This function hashes the key, gets the index and return the index or hash value of the key.
     
     3-3-hash_table_set.c: This function adds an element to the hash table and handles collision with chaining
+    
+    4-4-hash_table_get.c: This function retrives the value associated with a key at an index slot
