@@ -13,3 +13,7 @@
     3-3-hash_table_set.c: This function adds an element to the hash table and handles collision with chaining
     
     4-4-hash_table_get.c: This function retrives the value associated with a key at an index slot
+    
+    5-5-hash_table_print.c: This function prints element in a hash table
+    
+    6-6-hash_table_delete.c: This function deletes a hash table
